@@ -305,7 +305,7 @@ class Panel extends Nette\Object implements IBarPanel
 
 
 
-	public static function renderException(\Exception $e = NULL)
+	public static function renderException(\Throwable $e = NULL)
 	{
 		if (!$e instanceof InvalidResourceException || !($previous = $e->getPrevious())) {
 			return NULL;
